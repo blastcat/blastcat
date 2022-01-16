@@ -1,10 +1,10 @@
 package com.blast.springDemo.core.vo;
 
+import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.blast.springDemo.core.exception.ParamsException;
 import lombok.extern.log4j.Log4j2;
-import org.springframework.util.StringUtils;
 
 import java.lang.reflect.Array;
 import java.util.Date;
@@ -13,26 +13,26 @@ import java.util.Map;
 import java.util.Objects;
 
 @Log4j2
-public class ApiRequets extends JSONObject{
+public class ApiRequest extends JSONObject{
 
-    public ApiRequets(){
+    public ApiRequest(){
         super();
     }
 
-    public ApiRequets(Map<String, Object> map){
+    public ApiRequest(Map<String, Object> map){
         super(map);
     }
 
-    public ApiRequets(Object object){
+    public ApiRequest(Object object){
         super((JSONObject)JSONObject.toJSON(object));
     }
 
-    public static ApiRequets build(Map<String, Object> map){
-        return new ApiRequets(map);
+    public static ApiRequest build(Map<String, Object> map){
+        return new ApiRequest(map);
     }
 
-    public static ApiRequets build(Object object){
-        return new ApiRequets(object);
+    public static ApiRequest build(Object object){
+        return new ApiRequest(object);
     }
 
     public Object iGet(String key,String message){
@@ -59,7 +59,7 @@ public class ApiRequets extends JSONObject{
     }
 
     public String iGetString(String key,String message){
-        if (!this.containsKey(key) || StringUtils.isEmpty(this.getString(key)))throw new ParamsException(message);
+        if (!this.containsKey(key) || StrUtil.isBlank(this.getString(key)))throw new ParamsException(message);
         return this.getString(key);
     }
 
