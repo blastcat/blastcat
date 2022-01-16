@@ -1,4 +1,4 @@
-package com.blast.springDemo.exception;
+package com.blast.springDemo.core.exception;
 
 /**
  * 业务异常 也就是500

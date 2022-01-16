@@ -1,4 +1,4 @@
-package com.blast.springDemo.config;
+package com.blast.springDemo.core.config;
 
 import com.alibaba.fastjson.serializer.SerializeConfig;
 import com.alibaba.fastjson.serializer.SerializerFeature;

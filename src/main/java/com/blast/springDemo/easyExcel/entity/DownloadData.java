@@ -1,4 +1,4 @@
-package com.blast.springDemo.entity;
+package com.blast.springDemo.easyExcel.entity;
 
 import com.alibaba.excel.annotation.ExcelProperty;
 import lombok.Data;

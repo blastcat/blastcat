@@ -1,4 +1,4 @@
-package com.blast.springDemo.exception;
+package com.blast.springDemo.core.exception;
 
 public class ParamsException extends RuntimeException{
 

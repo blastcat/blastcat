@@ -1,4 +1,4 @@
-package com.blast.springDemo.vo;
+package com.blast.springDemo.core.vo;
 
 import com.alibaba.fastjson.annotation.JSONField;
 import com.alibaba.fastjson.serializer.LongCodec;

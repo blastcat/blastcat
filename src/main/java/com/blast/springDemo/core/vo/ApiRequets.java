@@ -1,8 +1,8 @@
-package com.blast.springDemo.vo;
+package com.blast.springDemo.core.vo;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.blast.springDemo.exception.ParamsException;
+import com.blast.springDemo.core.exception.ParamsException;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.util.StringUtils;
 
